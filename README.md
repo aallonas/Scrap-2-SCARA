@@ -6,4 +6,4 @@ The goal of this project is to build and program the cheapest reasonably capable
 
 The entire project cost a total of **xxx.xx€**, of which **xxx.xx€** I consider mandatory expenses for essential parts and materials. The remaining **xxx.xx€** represents optional luxury spending—components or upgrades that improve performance or aesthetics but are not strictly necessary for the robot to function.
 
-Please note that prices may vary between builds, especially since most hardware was sourced second-hand or repurposed from other projects. For reference and transparency, I have listed the prices based on their original retail value when bought new, even if the parts were acquired second-hand or reused.
+Please note that prices may vary between builds, especially since most hardware was sourced second-hand (by design) or repurposed from other projects. For transparency, I have listed both the original retail prices (new) and the prices I actually paid (used) wherever applicable.
