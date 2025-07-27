@@ -16,11 +16,15 @@
  *                - Optional: endstops, serial comms
  * 
  * Libraries:     - AccelStepper
+ *                - ros
+ *                - std_msgs/String
  * 
  * Version:       1.0
  ***************************************************************/
 
 #include <AccelStepper.h>
+#include <ros.h>
+#include <std_msgs/String.h>
 
 void setup() {
   // put your setup code here, to run once:
