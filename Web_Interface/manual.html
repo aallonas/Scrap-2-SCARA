@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="manual.html">MANUAL</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <h1>Scrap-2-SCARA</h1>
+        </header>
+
+        <h2>Manual Control Panel</h2>
+
+
+        <div class="slider-container">
+            <label for="slider1">Joint n°1:</label><br>
+            <input type="range" id="slider1" min="-180" max="180" value="0">
+            <span id="value1">50</span>
+            <button type="button" onclick="resetSlider('slider1', 'value1', 0)">Reset</button>
+        </div>
+
+        <div class="slider-container">
+            <label for="slider2">Joint n°2:</label><br>
+            <input type="range" id="slider2" min="-180" max="180" value="0">
+            <span id="value2">50</span>
+            <button type="button" onclick="resetSlider('slider2', 'value2', 0)">Reset</button>
+        </div>
+        
+        <div class="slider-container">
+            <label for="slider3">Joint n°3:</label><br>
+            <input type="range" id="slider3" min="-180" max="180" value="0">
+            <span id="value3">50</span>
+            <button type="button" onclick="resetSlider('slider3', 'value3', 0)">Reset</button>
+        </div>
+        
+        <div class="slider-container">
+            <label for="slider4">Joint n°4:</label><br>
+            <input type="range" id="slider4" min="-127" max="127" value="0">
+            <span id="value4">50</span>
+            <button type="button" onclick="resetSlider('slider4', 'value4', 0)">Reset</button>
+        </div>
+
+        <script>
+            function attachSliderHandler(sliderId, valueId) {
+                const slider = document.getElementById(sliderId);
+                const output = document.getElementById(valueId);
+                output.textContent = slider.value;
+                slider.oninput = function() {
+                    output.textContent = this.value;
+                }
+            }
+
+            function resetSlider(sliderId, valueId, resetValue) {
+                const slider = document.getElementById(sliderId);
+                const output = document.getElementById(valueId);
+                slider.value = resetValue;
+                output.textContent = resetValue;
+            }
+
+            attachSliderHandler("slider1", "value1");
+            attachSliderHandler("slider2", "value2");
+            attachSliderHandler("slider3", "value3");
+            attachSliderHandler("slider4", "value4");
+        </script>
+        <footer>
+            <h3>Scrap-2-SCARA</h3>
+            <ul>
+                <li><a href="https://github.com/aallonas/WebPage_Test" target="_blank"><img src="img/github.svg" alt="GitHub"></a></li>
+                <li><a href="https://www.youtube.com/@alexallns4924" target="_blank"><img src="img/youtube.svg" alt="YouTube"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
